@@ -1,0 +1,15 @@
+src/
+ ├── entities/                  # Classes de domínio
+ │   └── veiculo.entity.ts
+ ├── interfaces/                # Contratos e abstrações
+ │   └── veiculo-repository.interface.ts
+ ├── repositories/              # Implementações concretas de persistência
+ │   └── veiculo-memory.repository.ts
+ ├── services/                  # Regras de negócio
+ │   └── veiculo.service.ts
+ ├── controllers/               # Controladores da API
+ │   └── veiculo.controller.ts
+ ├── routes/                    # Definição das rotas Express
+ │   └── veiculo.routes.ts
+ ├── app.ts                     # Configuração do Express
+ └── server.ts                  # Ponto de entrada da aplicação

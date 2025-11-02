@@ -1,0 +1,94 @@
+@baseUrl = http://localhost:3000
+
+##########################################
+### 🟢 [POST] Criar novos veículos
+##########################################
+
+POST {{baseUrl}}/veiculos
+Content-Type: application/json
+
+{
+  "modelo": "Civic",
+  "ano": 2021,
+  "placa": "ABC-1234",
+  "cor": "Azul"
+}
+
+###
+
+POST {{baseUrl}}/veiculos
+Content-Type: application/json
+
+{
+  "modelo": "Corolla",
+  "ano": 2022,
+  "placa": "XYZ-5678",
+  "cor": "Verde"
+}
+
+###
+
+POST {{baseUrl}}/veiculos
+Content-Type: application/json
+
+{
+  "modelo": "Golf",
+  "ano": 2020,
+  "placa": "DEF-9012",
+  "cor": "Preto"
+}
+
+##########################################
+### 🔵 [GET] Listar todos os veículos
+##########################################
+
+GET {{baseUrl}}/veiculos
+
+##########################################
+### 🟠 [GET] Listar veículos formatados (todos)
+##########################################
+
+GET {{baseUrl}}/veiculos/formatado
+
+##########################################
+### 🟡 [GET] Buscar veículo por ID
+##########################################
+
+GET {{baseUrl}}/veiculos/1
+
+GET {{baseUrl}}/veiculos/2
+
+##########################################
+### 🟡 [GET] Buscar veículo por placa
+##########################################
+
+GET {{baseUrl}}/veiculos/placa/ABC-1234
+
+GET {{baseUrl}}/veiculos/placa/XYZ-5678
+
+##########################################
+### 🟠 [GET] Listar veículo formatado por ID
+##########################################
+
+GET {{baseUrl}}/veiculos/3/formatado
+
+GET {{baseUrl}}/veiculos/2/formatado
+
+##########################################
+### 🟣 [PUT] Atualizar veículo por ID
+##########################################
+
+PUT {{baseUrl}}/veiculos/1
+Content-Type: application/json
+
+{
+  "modelo": "Civic Sport",
+  "ano": 2023,
+  "cor": "Vermelho"
+}
+
+##########################################
+### 🔴 [DELETE] Remover veículo por ID
+##########################################
+
+DELETE {{baseUrl}}/veiculos/3

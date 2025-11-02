@@ -1,0 +1,15 @@
+# Node
+node_modules/
+dist/
+.env
+.vscode/
+npm-debug.log
+yarn-error.log
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# Docker volumes, opcional
+postgres_data/
+pgdata/
